@@ -1,0 +1,15 @@
+<?php
+
+namespace App\View\Components;
+
+use Illuminate\View\Component;
+use Illuminate\View\View;
+
+class AuthLayout extends Component
+{
+    public $title;
+    public function render(): View
+    {
+        return view("layouts.auth");
+    }
+}
