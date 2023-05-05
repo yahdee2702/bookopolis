@@ -1,4 +1,4 @@
-<x-auth-layout action="{{route('user.register')}}" method="POST">
+<x-auth-layout title="Register" action="{{route('user.register')}}" method="POST">
     @csrf
     @error('username')
     Wrong Username

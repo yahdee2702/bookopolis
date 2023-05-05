@@ -7,7 +7,6 @@ use Illuminate\View\View;
 
 class AuthLayout extends Component
 {
-    public $title;
     public function render(): View
     {
         return view("layouts.auth");

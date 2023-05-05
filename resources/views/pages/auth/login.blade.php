@@ -1,4 +1,4 @@
-<x-auth-layout action="{{route('user.login')}}" method="POST">
+<x-auth-layout title="Login" action="{{route('user.login')}}" method="POST">
     @csrf
     <h1 class="text-5xl font-bold">Sign In</h1>
     <div class="flex flex-col gap-5 self-stretch">
