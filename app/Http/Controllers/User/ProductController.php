@@ -53,7 +53,9 @@ class ProductController extends Controller
 
     public function show(Request $request, Book $book)
     {
-        return view('pages.view', compact('book'));
+        $recommended = Book::query()->withCount('orders')->orderBy('orders_count', 'desc')->limit(3)->get();
+
+        return view('pages.view', compact(['book', 'recommended']));
     }
 
     public function buy(Request $request, Book $book)

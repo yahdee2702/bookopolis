@@ -39,6 +39,10 @@ module.exports = {
             }
 
         },
+        screens: {
+            'xs': '450px',
+            ...defaultTheme.screens
+        }
     },
     plugins: [
         require('@tailwindcss/aspect-ratio'),

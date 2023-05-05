@@ -14,7 +14,7 @@
         <div class="flex-1 h-full">
             <img src="{{asset('images/dummy_image.jpg')}}" class="w-full h-full object-cover" alt="">
         </div>
-        <form {{$attributes}} class="flex flex-col w-[550px] gap-8 h-full px-16 items-start justify-center bg-white">{{$slot ?? ""}}</form>
+        <form {{$attributes}} class="flex flex-col w-[550px] max-md:w-[650px] gap-8 h-full px-16 max-sm:px-8 items-start justify-center bg-white">{{$slot ?? ""}}</form>
     </main>
     @livewireScripts
 </body>

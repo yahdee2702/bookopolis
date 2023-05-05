@@ -7,7 +7,6 @@ use Illuminate\View\View;
 
 class AppLayout extends Component
 {
-    public $title;
     public function render(): View
     {
         return view("layouts.app");

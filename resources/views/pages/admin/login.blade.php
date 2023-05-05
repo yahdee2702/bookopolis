@@ -16,7 +16,7 @@
         <div class="h-full">
             <img src="{{ asset('images/dummy_image.jpg') }}" class="w-full h-full object-cover" alt="">
         </div>
-        <form action="{{route('admin.login')}}" method="POST" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[500px] h-[500px] w-11/12 flex flex-col gap-8 px-16 items-start justify-center bg-white rounded-lg">
+        <form action="{{route('admin.login')}}" method="POST" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[500px] h-[500px] w-11/12 flex flex-col gap-8 px-16 max-sm:px-8 items-start justify-center bg-white rounded-lg">
             @csrf
             <h1 class="text-5xl font-bold">Admin Login</h1>
             <div class="flex flex-col gap-5 self-stretch">

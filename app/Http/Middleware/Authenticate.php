@@ -15,7 +15,6 @@ class Authenticate extends Middleware
 
     protected function unauthenticated($request, array $guards)
     {
-        error_log("Not authenticated");
         throw new AuthenticationException(
             'Unauthenticated.', $guards, $this->specificRedirectTo($request, $guards)
         );
