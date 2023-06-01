@@ -1,7 +1,7 @@
 <x-admin-container>
     <x-list-section class="max-w-xl" title="Admins">
         <x-slot name="titleAddon">
-            <x-button class="!px-2 self-center fill-white cursor-pointer" wire:click="create">@svg("svg\add.svg", "w-6 h-6")</x-button>
+            <x-button class="!px-2 self-center fill-white cursor-pointer" wire:click="create">@svg('svg/add.svg', 'w-6 h-6')</x-button>
         </x-slot>
         <x-slot name="main">
             @foreach ($admins as $adminI)
