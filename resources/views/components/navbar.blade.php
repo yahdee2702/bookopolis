@@ -7,8 +7,8 @@
     <x-app-icon />
 
     <div class="flex flex-row items-center gap-5 max-lg:hidden">
-        <x-nav-item href="/" selected="{{ $selected == 'home' }}">Home</x-nav-item>
-        <x-nav-item href="/store" selected="{{ $selected == 'store' }}">Store</x-nav-item>
+        <x-nav-item href="{{ route('home') }}" selected="{{ $selected == 'home' }}">Home</x-nav-item>
+        <x-nav-item href="{{ route('store') }}" selected="{{ $selected == 'store' }}">Store</x-nav-item>
     </div>
 
     @guest('user')
@@ -32,8 +32,8 @@
 
         <div x-show="open"
             class="absolute top-full left-0 flex flex-col w-full pb-4 rounded-b-3xl bg-gray-less border-b border-b-black">
-            <x-nav-menu-item href="/" selected="{{ $selected == 'home' }}">Home</x-nav-menu-item>
-            <x-nav-menu-item href="/store" selected="{{ $selected == 'store' }}">Store</x-nav-menu-item>
+            <x-nav-menu-item href="{{ route('home') }}" selected="{{ $selected == 'home' }}">Home</x-nav-menu-item>
+            <x-nav-menu-item href="{{ route('store') }}" selected="{{ $selected == 'store' }}">Store</x-nav-menu-item>
 
             <div class="px-page max-md:px-8 self-end">
                 @guest('user')

@@ -32,5 +32,5 @@
 
     <x-button type="submit" class="self-stretch text-lg">Create an Account</x-button>
 
-    <div class="text-black-less text-sm self-center">Already have an account? <span class="text-black font-semibold"><a href="/login">Sign In</a></span></div>
+    <div class="text-black-less text-sm self-center">Already have an account? <span class="text-black font-semibold"><a href="{{ route('user.login') }}">Sign In</a></span></div>
 </x-auth-layout>

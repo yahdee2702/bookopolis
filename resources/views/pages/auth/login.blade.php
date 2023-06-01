@@ -17,5 +17,5 @@
 
     <x-button type="submit" class="self-stretch text-lg">Sign In</x-button>
 
-    <div class="text-black-less text-sm self-center">New here? <span class="text-black font-semibold"><a href="/register">Create an Account</a></span></div>
+    <div class="text-black-less text-sm self-center">New here? <span class="text-black font-semibold"><a href="{{ route('user.register') }}">Create an Account</a></span></div>
 </x-auth-layout>
