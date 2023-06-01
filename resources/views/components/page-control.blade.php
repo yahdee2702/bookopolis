@@ -11,7 +11,7 @@ $totalPages = $paging["totalPages"];
 <div class="flex items-center justify-center" >
     <div class="flex flex-row items-center justify-center gap-5 w-full">
         <a href="?page={{$currentPage-1}}{{$currentCategory && $currentCategory != "all" ? "&category=$currentCategory" : ''}}{{$currentSearch ? "&search=$currentSearch" : ''}}" class="w-8 h-8 flex justify-center items-center rounded-md {{ $currentPage > 1 ? "hover:fill-white hover:bg-black" : "invisible" }}">
-            @svg('svg\left-control.svg')
+            @svg('svg/left-control.svg')
         </a>
 
         <div class="flex flex-row items-center justify-center text-lg font-medium gap-3">
@@ -34,7 +34,7 @@ $totalPages = $paging["totalPages"];
         </div>
 
         <a href="?page={{$currentPage+1}}{{$currentCategory ? "&category=$currentCategory" : ''}}{{$currentSearch ? "&search=$currentSearch" : ''}}" class="w-8 h-8 flex justify-center items-center rounded-md {{ $currentPage < $totalPages ? "hover:fill-white hover:bg-black" : "invisible" }}">
-            @svg('svg\right-control.svg')
+            @svg('svg/right-control.svg')
         </a>
     </div>
 </div>

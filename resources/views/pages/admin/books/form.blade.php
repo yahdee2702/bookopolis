@@ -24,7 +24,7 @@
 
         <div class="flex flex-row w-full gap-3">
             <x-button type="submit" class="flex-1">Save</x-button>
-            <x-button class="bg-red cursor-pointer !px-2 fill-white" wire:click="delete">@svg('svg\delete.svg')</x-button>
+            <x-button class="bg-red cursor-pointer !px-2 fill-white" wire:click="delete">@svg('svg/delete.svg')</x-button>
         </div>
     </form>
 
