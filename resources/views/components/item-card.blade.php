@@ -1,5 +1,5 @@
 <a {{$attributes->only('href')}} class="flex flex-col shrink-0 rounded-lg bg-white hover:bg-black hover:text-white hover:border-black border border-gray overflow-clip">
-    <img {{$attributes->only('src')}} class="w-[285px] max-sm:w-full max-md:w-[250px] aspect-1 object-cover object-center" alt="Item Photo's">
+    <img {{$attributes->only('src')}} class="w-[285px] max-sm:w-full max-sm:max-w-xs max-md:w-[250px] aspect-1 object-cover object-center" alt="Item Photo's">
 
     <div class="px-5 max-md:px-3 py-2">
         <div class="flex flex-row justify-between items-start">

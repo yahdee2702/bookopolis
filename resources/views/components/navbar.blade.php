@@ -27,7 +27,7 @@
 
     <div x-data="{ open: false }" class="lg:hidden">
         <div class="w-7 h-7" x-on:click="open = !open">
-            @svg('svg/add.svg', 'w-full h-full')
+            @svg('svg/menu.svg', 'w-full h-full')
         </div>
 
         <div x-show="open"
